@@ -4,22 +4,22 @@
 class AgentsmeshRunner < Formula
   desc "AgentsMesh Runner - AI Agent Task Executor"
   homepage "https://agentsmesh.ai"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
-    url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.1.2/agentsmesh-runner_0.1.2_darwin_all.tar.gz"
-    sha256 "90334a6d5884f1b55b7b1c38c9d2ed74b400ff39663d408ebbc18fa20de6cbf9"
+    url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.1.3/agentsmesh-runner_0.1.3_darwin_all.tar.gz"
+    sha256 "748073e6fa5076e0441cfa0d6c85416f13920d3ea1d074fccbb1958c928ee12c"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.1.2/agentsmesh-runner_0.1.2_linux_amd64.tar.gz"
-      sha256 "5d591ab9cee412784d3fef619d7376188d8c2523dcd3ca280af437acf6b57715"
+      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.1.3/agentsmesh-runner_0.1.3_linux_amd64.tar.gz"
+      sha256 "9f8f80daa164f7af98cc683f8dcf6c907b2d05f550a7e95d1eaec552c6cac55d"
     end
     on_arm do
-      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.1.2/agentsmesh-runner_0.1.2_linux_arm64.tar.gz"
-      sha256 "0acf09f23f49ca3e476deeef793571deaf85c03a868a2b77264b4e2844aba5bb"
+      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.1.3/agentsmesh-runner_0.1.3_linux_arm64.tar.gz"
+      sha256 "8049cae822dd024d6f5a6a161249dac91f8c6b3386eef337e7116bd6674a8de9"
     end
   end
 
