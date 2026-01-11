@@ -1,6 +1,6 @@
 # AgentsMesh Homebrew Tap
 
-This is the official Homebrew tap for [AgentMesh](https://agentmesh.dev) tools.
+This is the official Homebrew tap for [AgentsMesh](https://agentsmesh.ai) tools.
 
 ## Installation
 
@@ -8,15 +8,15 @@ This is the official Homebrew tap for [AgentMesh](https://agentmesh.dev) tools.
 # Add the tap
 brew tap agentsmesh/tap https://github.com/AgentsMesh/BrewCask
 
-# Install AgentMesh Runner
-brew install agentsmesh/tap/agentmesh-runner
+# Install AgentsMesh Runner
+brew install agentsmesh/tap/agentsmesh-runner
 ```
 
 ## Available Formulae
 
 | Formula | Description |
 |---------|-------------|
-| `agentmesh-runner` | AgentMesh Runner - AI Agent Task Executor |
+| `agentsmesh-runner` | AgentsMesh Runner - AI Agent Task Executor |
 
 ## Usage
 
@@ -24,7 +24,7 @@ After installation:
 
 ```bash
 # Register runner with server
-runner register --server https://api.agentmesh.dev --token YOUR_TOKEN
+runner register --server https://api.agentsmesh.ai --token YOUR_TOKEN
 
 # Start runner
 runner run
@@ -37,18 +37,18 @@ runner version
 
 ```bash
 brew update
-brew upgrade agentmesh-runner
+brew upgrade agentsmesh-runner
 ```
 
 ## Uninstalling
 
 ```bash
-brew uninstall agentmesh-runner
+brew uninstall agentsmesh-runner
 brew untap agentsmesh/tap
 ```
 
 ## Links
 
-- [AgentMesh Website](https://agentmesh.dev)
-- [Runner Documentation](https://agentmesh.dev/docs/runner)
+- [AgentsMesh Website](https://agentsmesh.ai)
+- [Runner Documentation](https://agentsmesh.ai/docs/runner)
 - [Runner Releases](https://github.com/AgentsMesh/AgentsMeshRunner/releases)
