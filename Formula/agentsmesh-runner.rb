@@ -5,41 +5,41 @@
 class AgentsmeshRunner < Formula
   desc "AgentsMesh Runner - AI Agent Task Executor"
   homepage "https://agentsmesh.ai"
-  version "0.2.15"
+  version "0.2.17"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.2.15/agentsmesh-runner_0.2.15_darwin_amd64.tar.gz"
-      sha256 "4a0ae590e9dc21484913467c83c7d0a837a65b505123064b0cd8234ec11d3c3f"
+      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.2.17/agentsmesh-runner_0.2.17_darwin_amd64.tar.gz"
+      sha256 "8737f88bfa7effec3045c5c289e4ba79d383b83151c85fef5e46337ffb998c26"
 
       def install
-        bin.install "runner"
+        bin.install "agentsmesh-runner"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.2.15/agentsmesh-runner_0.2.15_darwin_arm64.tar.gz"
-      sha256 "19d1e8e6adc4b998adfc3f157998f54d2961bfb59b521654d29a1882e25ca3a5"
+      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.2.17/agentsmesh-runner_0.2.17_darwin_arm64.tar.gz"
+      sha256 "07017e5ff96249248b227cc8ed3e5dfe8a94868d53ea569067c99d651175bc57"
 
       def install
-        bin.install "runner"
+        bin.install "agentsmesh-runner"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.2.15/agentsmesh-runner_0.2.15_linux_amd64.tar.gz"
-      sha256 "bf0d0513c8fa25d0d9653abe6dd2a1bb3c974ea47dac1030770f8a3ced0c4c91"
+      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.2.17/agentsmesh-runner_0.2.17_linux_amd64.tar.gz"
+      sha256 "82693ebf35971a9ec009e164656f76d019e9ee695d2a0bef560baceb44fcf79b"
       def install
-        bin.install "runner"
+        bin.install "agentsmesh-runner"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.2.15/agentsmesh-runner_0.2.15_linux_arm64.tar.gz"
-      sha256 "43c5de497c2bf347b13bda0801925acc77bf9b2b81b63356b9e8a60163d0445a"
+      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.2.17/agentsmesh-runner_0.2.17_linux_arm64.tar.gz"
+      sha256 "17845f5ebe4bf515f9fa1b6c4ce985a2ec91878580859d4a57ad25b9b03aa472"
       def install
-        bin.install "runner"
+        bin.install "agentsmesh-runner"
       end
     end
   end
@@ -49,16 +49,17 @@ class AgentsmeshRunner < Formula
       To get started with AgentsMesh Runner:
 
       1. Register the runner with your AgentsMesh server:
-         runner register --server https://api.agentsmesh.ai --token YOUR_TOKEN
+         # Global: https://api.agentsmesh.ai (or your own server address)
+         agentsmesh-runner register --server <SERVER_URL> --token YOUR_TOKEN
 
       2. Start the runner:
-         runner run
+         agentsmesh-runner run
 
       For more information, visit: https://agentsmesh.ai/docs/runner
     EOS
   end
 
   test do
-    system "#{bin}/runner", "version"
+    system "#{bin}/agentsmesh-runner", "version"
   end
 end
