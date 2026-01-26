@@ -24,13 +24,13 @@ After installation:
 
 ```bash
 # Register runner with server
-runner register --server https://api.agentsmesh.ai --token YOUR_TOKEN
+agentsmesh-runner register --server https://api.agentsmesh.ai --token YOUR_TOKEN
 
 # Start runner
-runner run
+agentsmesh-runner run
 
 # Check version
-runner version
+agentsmesh-runner version
 ```
 
 ## Updating
