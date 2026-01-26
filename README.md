@@ -24,7 +24,8 @@ After installation:
 
 ```bash
 # Register runner with server
-agentsmesh-runner register --server https://api.agentsmesh.ai --token YOUR_TOKEN
+# Global: https://api.agentsmesh.ai (or your own server address)
+agentsmesh-runner register --server <SERVER_URL> --token YOUR_TOKEN
 
 # Start runner
 agentsmesh-runner run
