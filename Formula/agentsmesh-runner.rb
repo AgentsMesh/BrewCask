@@ -5,21 +5,21 @@
 class AgentsmeshRunner < Formula
   desc "AgentsMesh Runner - AI Agent Task Executor"
   homepage "https://agentsmesh.ai"
-  version "0.3.8"
+  version "0.3.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.3.8/agentsmesh-runner_0.3.8_darwin_amd64.tar.gz"
-      sha256 "e3da144e767f7ca1ea0ab9c10d61ff0125cb7abcf1ebac94ab20ca84a2049c39"
+      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.3.9/agentsmesh-runner_0.3.9_darwin_amd64.tar.gz"
+      sha256 "ab37f7902713ed4c3bd85d125dc00c87c83aa08a58c23ae5ac4a750b1ee7a6c4"
 
       def install
         bin.install "agentsmesh-runner"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.3.8/agentsmesh-runner_0.3.8_darwin_arm64.tar.gz"
-      sha256 "f20e2aa765eb04ba83b6061718c40fd2e659744dd213f8fe3b9cb3f401671e31"
+      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.3.9/agentsmesh-runner_0.3.9_darwin_arm64.tar.gz"
+      sha256 "70ed383b920a98b42c6663a83b02926d3175fe56fe8c4f2161bfbd9388c1457f"
 
       def install
         bin.install "agentsmesh-runner"
@@ -29,15 +29,15 @@ class AgentsmeshRunner < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.3.8/agentsmesh-runner_0.3.8_linux_amd64.tar.gz"
-      sha256 "080d489d087b8c17dd96e975537f68f838f649e95c07932fa505d1615151dbc7"
+      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.3.9/agentsmesh-runner_0.3.9_linux_amd64.tar.gz"
+      sha256 "c57a77f1d02e5f41b7c570c3a23a9f9d45f0efb2dae85929736256627391ee3d"
       def install
         bin.install "agentsmesh-runner"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.3.8/agentsmesh-runner_0.3.8_linux_arm64.tar.gz"
-      sha256 "cdfa716a97de60d8c40b2ffa24b130dbeff9dd77d58ad2b5de5bc62a97037543"
+      url "https://github.com/AgentsMesh/AgentsMeshRunner/releases/download/v0.3.9/agentsmesh-runner_0.3.9_linux_arm64.tar.gz"
+      sha256 "b428f809ded613ea8331f59157c073b6be89b2d2572ea66f4489cad695644a8d"
       def install
         bin.install "agentsmesh-runner"
       end
